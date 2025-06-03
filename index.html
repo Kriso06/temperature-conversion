@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Temperature Conversion by Krishnika Goel</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class="convertor">  
+            <div class="row">
+            <div class="convertor-group" style="margin: 10px;">
+                <label for="from">From</label><br>
+                <select name="from" style="display: flex; height: 30px;font-size: 16px;margin-top: 10px;">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>    
+            <div class="convertor-group" style="margin: 10px;">
+                <label for="to">To</label><br>
+                <select name="to" style="display: flex; height: 30px;font-size: 16px;margin-top: 10px;">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+            </div>
+                <form>
+                    <div style="margin: 10px;">Enter</div>
+                    <input type="text" class="input-box">
+                    <input type="button" value="Convert" onclick="" style="display: flex; height: 50px;background-color: green;color: white;margin: 10px;width: 90px;font-size: 20px;"> <!--convert() in js-->
+                </form>
+                <div style="margin: 10px;">Result</div>
+                <div class="result-box"></div>
+          </div>  
+        </div>
+    </body>
+</html>
