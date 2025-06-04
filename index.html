@@ -28,8 +28,11 @@
             </div>
                 <form>
                     <div style="margin: 10px;">Enter</div>
-                    <input type="text" id="in" class="input-box">
-                    <input type="button" value="Convert" onclick="convert()" style="display: flex; height: 50px;background-color: green;color: white;margin: 10px;width: 90px;font-size: 20px;">
+                    <input type="text" id="in" class="input-box" onkeydown="if(event.key==='Enter'){event.preventDefault();convert();}">
+                  <div class="row">  
+                    <input type="button" value="Convert" onclick="convert()" style="display: flex; height: 50px;background-color: green;color: white;margin: 10px;width: 90px;font-size: 20px;border: 2px solid black;">
+                    <input type="button" value="Reset" onclick="resetForm()" style="display: flex; height: 50px;background-color: rgb(64, 64, 64);color: white;margin: 10px;width: 90px;font-size: 20px;border: 2px solid black;">
+                  </div>
                 </form>
                 <div style="margin: 10px;">Result</div>
                 <div id="res" class="result-box"></div>

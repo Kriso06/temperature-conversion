@@ -17,3 +17,8 @@ function convert(){
     }
     document.getElementById("res").innerText=res;
 }
+
+function resetForm(){
+    document.getElementById('in').value="";
+    document.getElementById('res').innerText="";
+}
